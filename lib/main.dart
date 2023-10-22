@@ -79,7 +79,6 @@ class HomePage extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                // Campo de nome
                 Expanded(
                   child: TextField(
                     controller: nameController,
@@ -88,8 +87,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                // Botão para salvar o nome
                 ElevatedButton(
                   onPressed: () {
                     userController.setUserName(nameController.text);
@@ -99,13 +96,11 @@ class HomePage extends StatelessWidget {
               ],
             ),
 
-            // Espaçamento
             const SizedBox(height: 10),
 
             Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                // Campo de idade
                 Expanded(
                   child: TextField(
                     controller: ageController,
@@ -114,8 +109,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                // Botão para salvar a idade
                 ElevatedButton(
                   onPressed: () {
                     userController.setUserAge(int.parse(ageController.text));
